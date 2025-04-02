@@ -1,0 +1,32 @@
+.footer {
+  padding: 1.5rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #757575;
+  background: var(--color-gray);
+}
+
+.footer ul {
+  display: flex;
+  gap: 0.5rem;
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 1rem;
+  }
+  
+  .footer ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Assignment</title>
+
+  <!--Styles-->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+
+  <!--Scripts-->
+  <script type="module" src="./scripts/index.js" defer></script>
+  <script type="module" src="./scripts/carousel.js" defer></script>
+  <script type="module" src="./scripts/pop-over.js" defer></script>
+  <script type="module" src="./scripts/video.js" defer></script>
+  <script type="module" src="./scripts/form.js" defer></script>
+</head>
+
+<body>
+  <!--header-->
+  <header class="header">
+    <img src="./assets/images/logo.svg" alt="Get an Intervention Inc's logo" loading="lazy" height="35" width="230">
+    <div class="mobile-menu-icon">☰</div>
+    
+    <div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <span class="separator">|</span>
+      
+      <nav class="contact-nav">
+        <a href="tel:1234567890">
+          <span>CALL NOW FOR A CONSULT&nbsp;</span>
+          <span>123.456.7890</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!--content-->
+  <main>
+    <!--HERO SECTION-->
+    <section class="hero">
+      <div class="section">
+        <div>
+          <h1 class="headline">
+            <span class="headline_bordered">Get An</span></br />
+            <span>Intervention</span>
+          </h1>
+          <p>
+            Showing greater respect to older adults can be done in several ways :
+            acknowledging and putting to use the talents and skills of older adults; creating
+            intergenerational initiatives; and allowing older adults to stay active and independent
+            for as long as possible.
+          </p>
+        </div>
+        <div class="form-container">
+          <h2>Contact Us</h2>
+          <form id="contactForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <input type="text" id="first-name" placeholder=" " required />
+                <label for="first-name">First Name</label>
+              </div>
+
+              <div class="form-group">
+                <input type="text" id="last-name" placeholder=" " required />
+                <label for="last-name">Last Name</label>
+              </div>
+
+              <div class="form-group">
+                <input type="email" id="email" placeholder=" " required />
+                <label for="email">Business Email</label>
+              </div>
+
+              <div class="form-group">
+                <input type="text" id="company" placeholder=" " required />
+                <label for="company">Company</label>
+              </div>
+              <div class="form-group">
+                <select id="country" required>
+                  <option value="" disabled selected></option>
+                  <option value="USA">USA</option>
+                  <option value="Canada">Canada</option>
+                  <option value="UK">UK</option>
+                </select>
+                <label for="country">Country</label>
+              </div>
+            </div>
+            <div class="button-container">
+              <button type="submit" class="button button-primary button-icon">
+                <img src="./assets/icons/plane.svg" alt="send icon">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--CARDS SECTION-->
+    <section class="cards-section">
+      <img src="./assets/images/card-cover-1.svg" alt="image">
+      <img src="./assets/images/card-cover-2.svg" alt="image">
+      <img src="./assets/images/card-cover-3.svg" alt="image">
+
+      <div class="seperator">
+        <h5 class="headline">
+          <span class="headline_bordered">We</span>
+          <span>Understand</span>
+        </h5>
+        <div class="header-seperator"></div>
+      </div>
+
+      <p>
+        Older adults want to play active and meaningful roles in their lives, including as part of a social network, a
+        neighborhood, and a community. Service providers and policymakers must consider that a lack of sense of purpose
+        can
+        become problematic as people age. Engaging them in leisure activities and volunteer work is important.
+      </p>
+      <p>
+        Older adults want to stay active and contribute to society in a reciprocal manner (meaning that they want to
+        exchange
+        their services and skills with others for the mutual benefit of the neighborhood or community). Qualitative and
+        quantitative studies published from 2005 to 2016 examining the social needs of older adults were eligible for
+        inclusion.
+      </p>
+      <p>
+        To stimulate social contacts, neighborhood initiatives can be developed. Social meeting places, such as pubs and
+        churches can help to foster the development of close and peripheral relationships.
+
+        <button class="button button-secondary button-icon">
+          92% Success Rate
+          <img src="./assets/icons/arrow-right.svg" />
+        </button>
+      </p>
+    </section>
+
+    <!--TESTIMONIALS-->
+    <section class="testimonials-section">
+      <div class="carousel-container">
+        <div class="carousel">
+          <button class="move-slide-button left">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M36.24 39.76L20.48 24L36.24 8.24L32 4L12 24L32 44L36.24 39.76Z" fill="#EAEAEA" />
+            </svg>
+          </button>
+
+          <ul class="slides">
+            <li class="slide">
+              <img class="slide-image" src="./assets/images/persons/person-1.svg" alt="Abbie Harvey">
+              <div class="slide-content">
+                <h5 class="name">Abbie Harvey</h5>
+                <p class="description">I have been caring for my mom & dad off and on for about 10 years now, and I know
+                  the
+                  importance of me
+                  being
+                  there for
+                  appointments. Older people need attention, love and care that they truly deserve.</p>
+                <img class="slide-quote" src="./assets/images/quotes.svg" alt="Quote Icon">
+              </div>
+            </li>
+            <li class="slide">
+              <img class="slide-image" src="./assets/images/persons/person-2.svg" alt="Abbie Harvey">
+              <div class="slide-content">
+                <h5 class="name">Lorem, ipsum dolor</h5>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vitae, esse
+                  consectetur placeat ducimus quos, quae accusantium enim sunt minima neque provident quia alias
+                  inventore
+                  deleniti nisi facilis asperiores rerum nihil quis quam repellendus, nulla at! Tempora rem atque fugit?
+                </p>
+                <img class="slide-quote" src="./assets/images/quotes.svg" alt="Quote Icon">
+              </div>
+            </li>
+            <li class="slide">
+              <img class="slide-image" src="./assets/images/persons/person-2.svg" alt="Abbie Harvey">
+              <div class="slide-content">
+                <h5 class="name">Lorem ipsum dolor sit</h5>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis saepe cumque
+                  architecto laborum pariatur fuga id fugit. Nostrum aperiam nobis sit ex quaerat. Doloremque pariatur
+                  eius accusantium molestias aliquid explicabo.</p>
+                <img class="slide-quote" src="./assets/images/quotes.svg" alt="Quote Icon">
+              </div>
+            </li>
+          </ul>
+
+          <button class="move-slide-button right">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M36.24 39.76L20.48 24L36.24 8.24L32 4L12 24L32 44L36.24 39.76Z" fill="#EAEAEA" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="badge-buttons">
+          <button class="badge-button">
+          </button><button class="badge-button">
+          </button><button class="badge-button">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--ORGANIZE EVERYTHING-->
+    <section class="organize-section">
+      <div class="title-part">
+        <h5 class="title">
+          <span class="title-bordered">WE</span>
+          <span>CAN ORGANIZE EVERYTHING</span>
+        </h5>
+        <div class="title-seperator"></div>
+      </div>
+
+      <article class="grid">
+        <p>
+          <b>Interventions</b> should focus on older adult’s desire for connectedness, participation and independence.
+        </p>
+
+        <p>
+          Loneliness and social isolation are growing public health concerns in our aging society. Whilst these
+          experiences occur
+          across the life span, 50% of individuals aged over 60 are at risk of social isolation and one-third will
+          experience some
+          degree of loneliness later in life. It is vital to reduce loneliness and social isolation among older adults.
+        </p>
+
+        <p>
+          The methodology framework proposed by Asked and O’Malley and further developed by Levac, et al. was used to
+          guide the
+          scoping review process. A total of 33 reviews met the inclusion criteria, evaluating a range of interventions
+          targeted
+          at older people residing in the community or institutionalised settings.
+        </p>
+
+        <a href="#" class="feature">
+          Needs Assessment
+        </a>
+
+        <a href="#" class="feature">
+          Treatment Planning & Placement
+        </a>
+
+        <a href="#" class="feature">
+          Transportation & Logistics
+        </a>
+
+        <a href="#" class="feature" data-popover="info-popover">
+          <div class="popover-trigger">
+            <span class="popover-title">Insurance Advocacy</span>
+            <img src="./assets/icons/info.svg" alt="info">
+          </div>
+
+          <div class="popover" id="info-popover">
+            <div class="popover-arrow"></div>
+            <div class="popover-content">
+              We’re experienced in our individual crafts and understand how each one
+              of our roles impacts your plan holistically.
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="feature">
+          Employment Advocacy
+        </a>
+
+        <a href="#" class="feature">
+          Aftercare Planning
+        </a>
+      </article>
+    </section>
+
+    <!--WATCH THE VIDEO-->
+    <section class="video-section">
+      <div class="video-container">
+        <div class="video-info">
+          <div class="video-title">
+            <div class="video-title-text">
+              <span class="video-title-transparent">WATCH</span>
+              <span>THE VIDEO</span>
+            </div>
+            <div class="video-feature">
+              <img src="./assets/icons/Checkmark.svg" alt="Checkmark" />
+              <h6>Needs Assessment</h6>
+            </div>
+            <div class="description-container">
+              <p class="video-description">
+                The Advocacy Evaluation Toolkit contains the instruments used to collect data for evaluating the Consumer Voices for Coverage program.
+              </p>
+            </div>
+            <div class="video-feature">
+              <img src="./assets/icons/Checkmark.svg" alt="Checkmark" />
+              <h6>Insurance Advocacy</h6>
+            </div>
+            <div class="description-container">
+              <p class="video-description">
+                We are committed to advocating for appropriate coverage and payment policies.
+              </p>
+            </div>
+            <div class="video-feature">
+              <img src="./assets/icons/Checkmark.svg" alt="Checkmark" />
+              <h6>Treatment Planning & Placement</h6>
+            </div>
+            <div class="description-container">
+              <p class="video-description">
+                Patients can better understand medical procedures, discharge instructions, etc.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <img src="./assets/images/video Group.svg" alt="Video Preview" class="video-thumbnail" />
+          <img src="./assets/icons/play-button.svg" alt="video button" class="play-button"/>
+          <img src="./assets/icons/play-button-before.svg" alt="video button" class="play-button-before"/>
+          <video class="video-player" controls>
+            <source src="./assets/video/SampleVideo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  <!--footer-->
+  <footer class="footer">
+    <div>
+      &copy;2024 Get an Intervention Inc. All rights reserved.
+    </div>
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li>|</li>
+      <li><a href="#">Terms of use</a></li>
+      <li>|</li>
+      <li><a href="#">Site Map</a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>

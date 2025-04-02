@@ -1,0 +1,235 @@
+.hero {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  padding: 8rem 10rem;
+  background: url("/Dev_vamsikrishna_DevTest2.zip/assets/images/hero-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero .section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  place-items: center;
+  gap: 4rem;
+  padding-top: 2rem;
+}
+
+.headline {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-family: sans-serif;
+  line-height: 4.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.headline_bordered {
+  font-family: sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px var(--color-light);
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+/* Contact Us Form */
+/* Form Container */
+.form-container {
+  background: linear-gradient(#2a7d6c, #3e69609e);
+  padding: 40px;
+  border-radius: 0.75rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+}
+
+.form-container h2 {
+  color: var(--color-light);
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+/* Grid Layout */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+/* Full-width row for Country */
+.form-grid .form-group:last-child {
+  grid-column: span 2;
+}
+
+/* Floating Label Inputs */
+.form-group {
+  position: relative;
+  width: 100%;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 14px 12px;
+  border: 1px solid var(--color-fade);
+  background: transparent;
+  color: var(--color-light);
+  border-radius: 0px;
+  outline: none;
+  transition: border-color 0.3s;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Hide Placeholder Text */
+.form-group input::placeholder {
+  color: transparent;
+}
+
+/* Floating Labels */
+.form-group label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  background: transparent;
+  padding: 0 6px;
+}
+
+/* Move label up when input is focused or has content */
+.form-group input:focus ~ label,
+.form-group input:not(:placeholder-shown) ~ label,
+.form-group select:focus ~ label,
+.form-group select.filled ~ label {
+  top: 2px;
+  font-size: 12px;
+  color: var(--color-light);
+  background: var(--color-dark);
+  padding: 0 6px;
+}
+
+/* Focus Effect */
+.form-group input:focus,
+.form-group select:focus {
+  border-color: var(--color-light);
+}
+
+select option {
+  color: var(--color-dark);
+}
+
+/* Select Dropdown Styling */
+.form-group select {
+  appearance: none;
+  background: transparent;
+  color: var(--color-light);
+  cursor: pointer;
+  padding-right: 36px;
+}
+
+/* Custom Dropdown Arrow */
+.form-group::after {
+  /* content: "▼"; */
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.8);
+  pointer-events: none;
+  font-size: 14px;
+}
+
+/* Submit Button */
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    padding: 4rem 2rem;
+  }
+
+  .hero .section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .headline {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .form-container {
+    max-width: 100%;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .headline {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .form-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .form-grid .form-group {
+    width: 100%;
+  }
+
+  .form-grid .form-group:last-child {
+    grid-column: unset;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 12px 10px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group input:focus ~ label,
+  .form-group input:not(:placeholder-shown) ~ label,
+  .form-group select:focus ~ label,
+  .form-group select.filled ~ label {
+    font-size: 11px;
+  }
+
+  .form-group + .form-group {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-position: center center;
+    background-size: cover;
+  }
+}

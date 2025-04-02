@@ -1,0 +1,119 @@
+.organize-section {
+  padding: 4rem 10rem;
+}
+
+.organize-section .title-part {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.organize-section .title-part .title {
+  text-transform: uppercase;
+  color: var(--color-black);
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: normal;
+}
+
+.organize-section .title-part .title .title-bordered {
+  font-family: sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px var(--color-black);
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 2.25rem;
+}
+
+.organize-section .title-part .title-seperator {
+  height: 1px;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  background-color: var(--color-black);
+  opacity: 0.2;
+}
+
+.organize-section .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.organize-section .grid > :first-child {
+  font-size: 1.125rem;
+  font-style: italic;
+}
+
+.organize-section .grid > :first-child b {
+  font-weight: 800;
+  transition: font-weight 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.organize-section .grid .feature {
+  padding: 2rem;
+  border: 2px solid var(--color-secondary);
+  border-radius: 2px;
+  background-color: var(--color-light);
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+  transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.organize-section .grid .feature:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  color: var(--color-secondary);
+}
+
+@media (max-width: 576px) {
+  .organize-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .organize-section .title-part {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .organize-section .title-part .title,
+  .organize-section .title-part .title .title-bordered {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .organize-section .grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .organize-section .grid > :first-child {
+    font-size: 1rem;
+  }
+
+  .organize-section .grid .feature {
+    padding: 1rem;
+    font-size: 0.875rem;
+  }
+
+  .organize-section .grid .popover {
+    max-width: 250px;
+  }
+}
+
+
+@media (max-width: 374px) {
+  .organize-section {
+    padding: 1rem 0.75rem;
+  }
+
+  .organize-section .grid .feature {
+    padding: 0.75rem;
+  }
+}
+
+
+
+

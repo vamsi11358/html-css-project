@@ -1,0 +1,45 @@
+/* Popover Styling */
+.popover {
+  position: absolute;
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  max-width: 280px;
+  text-align: center;
+  line-height: 1.5;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(5px);
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* Popover Arrow */
+.popover-arrow {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #2c806f;
+}
+
+/* Popover Active (Hover Effect) */
+.popover.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.popover-trigger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}

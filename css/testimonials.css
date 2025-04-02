@@ -1,0 +1,237 @@
+.testimonials-section {
+  margin: -4rem 10rem 4rem 10rem;
+}
+
+.carousel {
+  display: flex;
+  color: var(--color-light);
+  position: relative;
+}
+
+.slide {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  position: absolute;
+  /* width: 100%; */
+}
+
+.slide.active {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+}
+
+.carousel .move-slide-button.right {
+  rotate: 180deg;
+}
+
+.carousel .move-slide-button svg path {
+  transition: fill 0.3s ease-in-out;
+}
+
+.carousel .move-slide-button:hover svg path {
+  fill: var(--color-secondary);
+}
+
+.carousel .slides {
+  display: flex;
+}
+
+.carousel .slides .slide {
+  display: flex;
+  gap: 2rem;
+}
+
+.carousel .slides .slide .slide-image {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.carousel .slide .slide-content {
+  min-height: 100px;
+  background: var(--color-dark);
+  position: relative;
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding: 4rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.carousel .slide .slide-content .slide-quote {
+  position: absolute;
+  right: 10%;
+  height: 50px;
+  z-index: 100;
+}
+
+.carousel .slide .slide-content .name {
+  font-size: 1.5rem;
+  font-family: var(--font-primary);
+}
+
+.carousel .slide .slide-content .description {
+  width: fit-content;
+  text-wrap-mode: wrap;
+  text-wrap-style: pretty;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.carousel .bottom-badges {
+  height: 0.5rem;
+  width: 0.5rem;
+  background-color: var(--color-fade);
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; 
+  align-items: center;
+}
+
+.carousel-container .badge-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.carousel-container .badge-buttons .badge-button {
+  background: var(--color-fade);
+  padding: 0.6rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.carousel-container .badge-buttons .badge-button.active {
+  background: var(--color-secondary);
+}
+
+.carousel-container .badge-buttons .badge-button:hover {
+  background: var(--color-secondary);
+}
+
+
+@media screen and (max-width: 1024px) {
+  .testimonials-section {
+    margin: -2rem 2rem 2rem 2rem;
+  }
+
+  .carousel .slides .slide .slide-image {
+    width: 220px;
+    left: 0;
+  }
+
+  .carousel .slide .slide-content {
+    margin-left: 200px;
+    padding: 3rem;
+    min-height: 220px;
+  }
+
+  .carousel .slide .slide-content .name {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .carousel .slide .slide-content .description {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 85%;
+  }
+
+  .carousel .slide .slide-content .slide-quote {
+    right: 2rem;
+    top: 3rem;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .testimonials-section {
+    margin: -1rem 1rem 1rem 1rem;
+  }
+
+  .carousel {
+    padding: 0;
+  }
+
+  .carousel .slides .slide {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .carousel .slides .slide .slide-image {
+    position: relative;
+    width: 180px;
+    margin: 0 auto;
+    transform: none;
+    top: 0;
+  }
+
+  .carousel .slide .slide-content {
+    margin-left: 0;
+    margin-top: -2rem;
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+  }
+
+  .carousel .slide .slide-content .name {
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+    text-align: center;
+  }
+
+  .carousel .slide .slide-content .description {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .carousel .move-slide-button {
+    display: none;
+  }
+
+  .carousel .slide .slide-content .slide-quote {
+    height: 25px;
+    right: 1.5rem;
+    top: 1.5rem;
+  }
+
+  .carousel-container .badge-buttons {
+    gap: 0.75rem;
+  }
+
+  .carousel-container .badge-buttons .badge-button {
+    padding: 0.35rem;
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  .testimonials-section {
+    margin: -1rem 0.5rem 1rem 0.5rem;
+  }
+
+  .carousel .slides .slide .slide-image {
+    width: 150px;
+  }
+
+  .carousel .slide .slide-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .carousel .slide .slide-content .description {
+    font-size: 0.8125rem;
+    padding: 0 0.5rem;
+  }
+}
